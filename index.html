@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Tracker</title>
+    <link rel="stylesheet" href = "./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Expletus+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header class = "topmost_Bar">
+        <div class= "LOGO">
+            <img class= "topmost_Bar_LOGO_img" src="https://media.discordapp.net/attachments/1055327467138715670/1201537910629998673/logo_1.jpg?ex=65ef1861&is=65dca361&hm=c15c9536ae533a023286bf7fd38117afcbfcf7e95718c3b5a0fe9b086fb876c4&=&format=webp&width=662&height=662" alt="Company LOGO">
+            <p class="topmost_Bar_LOGO_name">S_SCB</p>
+        </div>
+        <div class="topmost_Bar_Title">
+            <h1 class="topmost_Bar_Title_h1">Task Tracker</h1>
+        </div>
+        <div class = "topmost_Bar_nav_links">
+            <button class="topmost_Bar_nav_links_button" href="https://github.com/S-SCB">GitHub</button>
+            <button class="topmost_Bar_nav_links_button" href = "www.linkedin.com/in/saurabh-baij">LinkedIn</button>
+            <button class ="topmost_Bar_nav_links_button" href = "mailto:saurabhbaij@gmail.com" target="_blank">Email</button>
+        </div>
+    </header>
+    <main class="time_tracker">
+        <div class="time_tracker_enterTask">
+            <input type="text" id="taskName" placeholder="Enter task name">
+            <input type="datetime-local" id="deadline">
+            <button onclick="addTask()" id = "addTaskButton">Add Task</button>
+        </div>
+        <div class = "taskList">
+            <table>
+                <thead class = "taskList_table_thead">
+                    <tr class = "taskList_table_thead_tr">
+                        <th class = "taskList_table_thead_tr_Task_Column">Task</th>
+                        <th class = "taskList_table_thead_tr_Deadline_Date_Column">Deadline Date</th>
+                        <th class = "taskList_table_thead_tr_Time_Left">Time Left(Days)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </div>
+    </main>
+    
+</body>
+</html>                                                                                     
